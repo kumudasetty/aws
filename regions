@@ -1,0 +1,14 @@
+REGIONS	ec2.ap-south-1.amazonaws.com	ap-south-1
+REGIONS	ec2.eu-west-2.amazonaws.com	eu-west-2
+REGIONS	ec2.eu-west-1.amazonaws.com	eu-west-1
+REGIONS	ec2.ap-northeast-2.amazonaws.com	ap-northeast-2
+REGIONS	ec2.ap-northeast-1.amazonaws.com	ap-northeast-1
+REGIONS	ec2.sa-east-1.amazonaws.com	sa-east-1
+REGIONS	ec2.ca-central-1.amazonaws.com	ca-central-1
+REGIONS	ec2.ap-southeast-1.amazonaws.com	ap-southeast-1
+REGIONS	ec2.ap-southeast-2.amazonaws.com	ap-southeast-2
+REGIONS	ec2.eu-central-1.amazonaws.com	eu-central-1
+REGIONS	ec2.us-east-1.amazonaws.com	us-east-1
+REGIONS	ec2.us-east-2.amazonaws.com	us-east-2
+REGIONS	ec2.us-west-1.amazonaws.com	us-west-1
+REGIONS	ec2.us-west-2.amazonaws.com	us-west-2
