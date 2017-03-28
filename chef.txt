@@ -1,0 +1,13 @@
+Identify the resources required
+• Create a cookbook
+• Write a recipe
+• cookbooks/resolv/default.rb
+• cookbooks/resolv/files/default/resolv.conf
+• Update the run list
+• Converge the node
+
+Nodes: Servers, VMs or physical machines or cloud instances.
+Cookbook: A cookbook is a collection of recipes, attributes, and templates that Chef uses to package, distribute, and share configuration details. A chef repository can have many cookbooks and typically a cookbook configures only one service.
+Roles: Roles are a way to group nodes by the function. Each role is associated with a run_list i.e. a set of cookbook/recipies that need to execute in given sequence for configuring the node. Nodes can have multiple roles.
+Environments: In chef different nodes could belong to different environments like dev, stage, prod, etc. Like roles environments also have a run_list.
+Data Bags: Data bags are like cookbook attributes but are used to store sensitive information like passwords, api keys, secrets, etc.
