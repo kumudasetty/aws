@@ -1,3 +1,4 @@
+$ aws ec2 run-instances --generate-cli-skeleton
 {
     "DryRun": true, 
     "ImageId": "", 
