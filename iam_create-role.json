@@ -1,0 +1,11 @@
+{
+    "Path": "", 
+    "RoleName": "", 
+    "AssumeRolePolicyDocument": ""
+}
+
+
+$ aws iam create-role
+--role-name S3RoleForEC2
+--assume-role-policy-document
+file://F:\\S3RoleForEC2.json

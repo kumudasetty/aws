@@ -1,0 +1,12 @@
+{
+    "RoleName": "", 
+    "PolicyName": "", 
+    "PolicyDocument": ""
+}
+
+
+aws iam put-role-policy
+--role-name S3RoleForEC2
+--policy-name S3RoleForEC2Policy
+--policy-document
+file://F:\\S3RoleForEC2Policy.json

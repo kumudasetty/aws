@@ -1,0 +1,29 @@
+Creating IAM users
+Creating IAM groups and assigning group-level permissions
+Creating IAM roles
+Connecting on-premise AD to AWS IAM
+Confiuring AWS multifactor authentication
+
+aws iam create-user
+aws iam create-login-profile
+
+aws iam put-user-policy
+aws iam create-group
+aws iam add-user-to-group
+aws iam get-group --group-name developers
+
+Creating IAM roles
+aws iam create-role
+aws iam put-role-policy
+aws iam create-instance-profile
+aws iam add-role-to-instance-profile
+
+Launch an EC2 instance with the role
+$ aws ec2 run-instances
+--image-id ami-7e2c612c
+--count 1
+--instance-type t2.micro
+--key-name MyKeyPair
+--security-group-ids sg-ad70b8c8
+--subnet-id subnet-aed11acb
+--iam-instance-profile Name=S3RoleForEC2Profile

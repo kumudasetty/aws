@@ -1,0 +1,10 @@
+{
+    "UserName": "", 
+    "Password": "", 
+    "PasswordResetRequired": true
+}
+
+
+$ aws iam create-login-profile
+--user-name rtuniki
+--password awscloud123

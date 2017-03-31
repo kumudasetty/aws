@@ -1,0 +1,8 @@
+{
+    "GroupName": "", 
+    "UserName": ""
+}
+
+$ aws iam add-user-to-group
+--user-name rtuniki
+--group-name developers

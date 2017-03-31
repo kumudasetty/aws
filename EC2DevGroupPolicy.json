@@ -1,0 +1,21 @@
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Effect": "Allow",
+"Action": "ec2:DescribeI
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": "ec2:Terminate
+"Resource": "arn:aws:ec2
+1:968336292411:instance/
+"Condition": {
+"StringEquals": {
+"ec2:ResourceTag/s
+}
+}
+}
+]
+}

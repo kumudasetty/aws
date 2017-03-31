@@ -1,0 +1,17 @@
+{
+    "InstanceProfileName": "", 
+    "RoleName": ""
+}
+
+$ aws iam add-role-to-instance-profile
+--instance-profile-name S3RoleForEC2Profile
+--role-name S3RoleForEC2
+
+$ aws ec2 run-instances
+--image-id ami-7e2c612c
+--count 1
+--instance-type t2.micro
+--key-name MyKeyPair
+--security-group-ids sg-ad70b8c8
+--subnet-id subnet-aed11acb
+--iam-instance-profile Name=S3RoleForEC2Profile

@@ -1,0 +1,40 @@
+{
+    "UserName": "", 
+    "PolicyName": "", 
+    "PolicyDocument": ""
+}
+
+
+$ aws iam put-user-policy
+--user-name ethanhunt
+--policy-name S3ReadAccess
+--policy-document file://S3ReadAccess.json
+
+
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": ["s3:ListAllMyBuckets"],
+			"Resource": "arn:aws:s3:::*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+			"s3:ListBucket",
+			"s3:GetBucketLocation"
+			],
+		 "Resource": "arn:aws:s3:::ethanhunt"
+		 },
+		 {
+			"Effect": "Allow",
+			"Action": [
+			"s3:PutObject",
+			"s3:GetObject",
+			"s3:DeleteObject"
+			],
+		 "Resource": "arn:aws:s3:::ethanhunt/*"
+		 }
+	 ]
+}

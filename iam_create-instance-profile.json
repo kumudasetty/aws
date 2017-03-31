@@ -1,0 +1,8 @@
+{
+    "InstanceProfileName": "", 
+    "Path": ""
+}
+
+
+$ aws iam create-instance-profile
+--instance-profile-name S3RoleForEC2Profile

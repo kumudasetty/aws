@@ -1,0 +1,10 @@
+{
+    "Path": "", 
+    "UserName": ""
+}
+
+
+$ aws iam create-user
+--user-name rtuniki
+
+
