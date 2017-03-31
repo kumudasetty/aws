@@ -1,17 +1,16 @@
-$ aws ec2 run-instances --generate-cli-skeleton
 {
     "DryRun": true, 
-    "ImageId": "", 
-    "MinCount": 0, 
-    "MaxCount": 0, 
-    "KeyName": "", 
-    "SecurityGroups": [
+    "ImageId": "", 		
+    "MinCount": 0, 		
+    "MaxCount": 0, 		
+    "KeyName": "", 		
+    "SecurityGroups": [	
         ""
     ], 
-    "SecurityGroupIds": [
+    "SecurityGroupIds": [	
         ""
     ], 
-    "UserData": "", 
+    "UserData": "", 			
     "InstanceType": "", 
     "Placement": {
         "AvailabilityZone": "", 
@@ -85,3 +84,29 @@ $ aws ec2 run-instances --generate-cli-skeleton
     }, 
     "EbsOptimized": true
 }
+
+
+Launching the EC2 instance in VPC
+$ aws ec2 run-instances
+--image-id [ImageId]
+--count [InstanceCount]
+--instance-type [InstanceType]
+--key-name [KeyPairName]
+--security-group-ids [SecurityGroupIds]
+--subnet-id [SubnetId]
+
+The parameters used in this command are described as follows:
+[ImageId] : This is the ID of the image
+[InstanceCount] : This gives number of instances to be created
+[InstanceType] : This gives the type of EC2 instance
+[KeyPairName] : This parameter provides the key/pair name for authentication
+[SecurityGroupIds] : This one provides security group IDs
+[SubnetId] : This specifis the subnet where you want to launch your instance.
+
+$ aws ec2 run-instances
+--image-id ami-7e2c612c
+--count 1
+--instance-type t1.micro
+--key-name WebServerKeyPair
+--security-group-ids sg-ad70b8c8
+--subnet-id subnet-aed11acb

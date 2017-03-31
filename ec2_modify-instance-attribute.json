@@ -1,0 +1,67 @@
+{
+    "DryRun": true, 
+    "InstanceId": "", 
+    "Attribute": "", 
+    "Value": "", 
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "", 
+            "Ebs": {
+                "VolumeId": "", 
+                "DeleteOnTermination": true
+            }, 
+            "VirtualName": "", 
+            "NoDevice": ""
+        }
+    ], 
+    "SourceDestCheck": {
+        "Value": true
+    }, 
+    "DisableApiTermination": {
+        "Value": true
+    }, 
+    "InstanceType": {
+        "Value": ""
+    }, 
+    "Kernel": {
+        "Value": ""
+    }, 
+    "Ramdisk": {
+        "Value": ""
+    }, 
+    "UserData": {
+        "Value": null
+    }, 
+    "InstanceInitiatedShutdownBehavior": {
+        "Value": ""
+    }, 
+    "Groups": [
+        ""
+    ], 
+    "EbsOptimized": {
+        "Value": true
+    }, 
+    "SriovNetSupport": {
+        "Value": ""
+    }, 
+    "EnaSupport": {
+        "Value": true
+    }
+}
+
+
+Adding the security group to an instance
+By running the following command, you can attach the security group to your EC2 instance.
+You have to provide the EC2 instance ID, and one or more security group IDs:
+
+$ aws ec2 modify-instance-attribute
+--instance-id [InstanceId]
+--groups [SecurityGroupIds]
+The parameters used in this command are described here:
+[InstanceId] : This option gives an EC2 instance ID
+[SecurityGroupIds] : This option provides the IDs of one or more security groups
+
+
+$ aws ec2 modify-instance-attribute
+--instance-id i-2e7dace3
+--groups sg-c6b873a3 sg-ccb873a9

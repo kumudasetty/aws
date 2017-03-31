@@ -1,0 +1,24 @@
+{
+    "DryRun": true, 
+    "VolumeId": "", 
+    "InstanceId": "", 
+    "Device": ""
+}
+
+Attaching the volume
+Run the following command to attach an EBS volumes to an EC2 instance. You will need to provide the EC2 instance ID, EBS volume ID, and the device name.
+$ aws ec2 attach-volume
+--volume-id [VolumeId]
+--instance-id [InstanceId]
+--device [Device]
+
+The parameters used in this command are described as follows:
+[VolumeId] : This provides the volume ID
+[InstanceId] : This parameter gives an EC2 instance ID
+[Device] : This one is used to mention the device name to expose to the instance (for example, /dev/sdh or xvdh)
+
+Run the following command to attach the EBS volume to an EC2 instance as /dev/sdf:
+$ aws ec2 attach-volume
+--volume-id vol-64e54f6a
+--instance-id i-2e7dace3
+--device /dev/sdf

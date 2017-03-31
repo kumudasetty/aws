@@ -1,0 +1,46 @@
+{
+    "DryRun": true, 
+    "InstanceId": "", 
+    "PublicIp": "", 
+    "AllocationId": "", 
+    "NetworkInterfaceId": "", 
+    "PrivateIpAddress": "", 
+    "AllowReassociation": true
+}
+
+
+to create the Elastic IP in VPC
+$ aws ec2 allocate-address --domain vpc
+
+to associate the Elastic IP to the Elastic Network Interface (ENI)
+$ aws ec2 associate-address
+--network-interface-id [NetworkInterfaceId]
+--allocation-id [AllocationId]
+
+The parameters used in this command are described here:
+[NetworkInterfaceId] : This gives the ENI ID to attach
+[AllocationId] : This provides the allocation ID of the EIP for EC2-VPC
+
+$ aws ec2 associate-address
+--network-interface-id eni-d68df2b3
+--allocation-id eipalloc-82e0ffe0
+
+You need to provide the network interface ID of the ENI and allocation ID of the Elastic IP 
+If you don't specify the private IP address, then the Elastic IP address is associated with the primary IP address.
+
+Associating the EIP to the ENI
+By running the following command, we can associate the EIP to the ENI. You have to provide the ENI ID, EIP allocation ID, and the private address.
+$ aws ec2 associate-address
+--network-interface-id [NetworkInterfaceId]
+--allocation-id [AllocationId]
+--private-ip-address [PrivateIpAddress]
+
+The parameters used in this command are described as follows:
+[NetworkInterfaceId] : This parameter provides the network interface ID to attach to an EC2 instance
+[AllocationId] : This gives the allocation ID of EIP, which is required for EC2-VPC
+[PrivateIpAddress] : If no private IP address is specifid, the Elastic IP address is associated with the primary private IP address
+
+$ aws ec2 associate-address
+--network-interface-id eni-5c88f739
+--allocation-id eipalloc-d59f80b7
+--private-ip-address 10.0.0.26

@@ -1,0 +1,22 @@
+{
+    "DryRun": true, 
+    "KeyName": ""
+}
+
+
+Creating a key pair
+Use the following steps to create a key pair:
+1. Run the following command to create the key pair.
+You have to provide the key pair name. You can explicitly specify the text output for this command using the –output argument for easy cut and paste.
+
+$ aws ec2 create-key-pair
+--key-name [KeyPairName]
+The [KeyPairName]  parameter in this command is used to specify a name for the key pair.
+2. After executing the create-key-pair command, copy the entire output key into fie
+including the following lines:
+----BEGIN RSA PRIVATE KEY----
+-----END RSA PRIVATE KEY-----
+3. Save the fie with ASCII encoding.
+4. Run the following command to create the key pair with name WebServerKeyPair.
+$ aws ec2 create-key-pair
+--key-name WebServerKeyPair

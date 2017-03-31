@@ -1,0 +1,36 @@
+{
+    "DryRun": true, 
+    "ZoneNames": [
+        ""
+    ], 
+    "Filters": [
+        {
+            "Name": "", 
+            "Values": [
+                ""
+            ]
+        }
+    ]
+}
+
+
+Creating an EBS volume
+Run the following command to create an Amazon EBS volume that can be attached to an instance in the same availability zone. Record the volume ID for further usage.
+$ aws ec2 create-volume
+--availability-zone [AvailabilityZone]
+--volume-type [VolumeType]
+--iops [IOPS]
+--size [Size]
+The parameters used in this command are described as follows:
+[AvailabilityZone] : This specifis the availability zone in which to create the volume. Use the describe-availability-zones command to list the availability zones.
+[VolumeType] : This gives the volume type. This can be gp2 for General Purpose (SSD) volumes, 
+io1 for Provisioned IOPS (SSD) volumes, 
+or standard for Magnetic volumes.
+[IOPS] : This is only valid for Provisioned IOPS (SSD) volumes. This parameter specifis the number of IOPS to provision for the volume.
+[Size] : This one gives the size of the volume, in GiBs.
+
+$ aws ec2 create-volume
+--availability-zone ap-southeast-1b
+--volume-type io1
+--iops 1000
+--size 90

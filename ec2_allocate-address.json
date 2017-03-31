@@ -1,0 +1,26 @@
+{
+    "DryRun": true, 
+    "Domain": ""
+}
+
+Allocating Elastic IP addresses
+Elastic IP (EIP) address is the static public IP address. 
+You can attach and detach the EIP from EC2 instance at any time. Instances in EC2-Classic support only one private IP address and corresponding EIP. 
+Instances in EC2-VPC support multiple private IP addresses, and each one can have a corresponding EIP. 
+If you stop the instance in EC2-Classic the EIP is disassociated from instance, and you have to associate it again when you start the instance.
+But if you stop the instance in EC2-VPC, the EIP remains associated with the EC2 instance.
+
+$ aws ec2 allocate-address
+--domain [Domain]
+
+You have to specify whether domain is standard or VPC. Record the allocation ID for further use.
+Domain value indicates whether the EIP address is used with instances in EC2-Classic (standard) or instances in a EC2-VPC (VPC).
+
+create the Elastic IP in VPC
+$ aws ec2 allocate-address --domain vpc
+
+
+to associate the Elastic IP to the Elastic Network Interface (ENI):
+$ aws ec2 associate-address
+--network-interface-id [NetworkInterfaceId]
+--allocation-id [AllocationId]

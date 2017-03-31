@@ -1,0 +1,42 @@
+{
+    "SubnetId": "", 
+    "Description": "", 
+    "PrivateIpAddress": "", 
+    "Groups": [
+        ""
+    ], 
+    "PrivateIpAddresses": [
+        {
+            "PrivateIpAddress": "", 
+            "Primary": true
+        }
+    ], 
+    "SecondaryPrivateIpAddressCount": 0, 
+    "Ipv6Addresses": [
+        {
+            "Ipv6Address": ""
+        }
+    ], 
+    "Ipv6AddressCount": 0, 
+    "DryRun": true
+}
+
+
+Creating a network interface
+Run the following command to create the ENI. You will need to provide the subnet ID, security group IDs, and one or more private IP addresses.
+$ aws ec2 create-network-interface
+--subnet-id [SubnetId]
+--groups [SecurityGroupIds]
+--private-ip-addresses [PrivateIpAddressList]
+
+The parameters used in this command are described as follows:
+[SubnetId] : This gives the ID of the subnet to associate with the network interface
+[SecurityGroupIds] : This parameter provides IDs of one or more security groups
+[PrivateIpAddressList] : This is used to show list of private IP address
+Syntax:
+PrivateIpAddress=string,Primary=boolean
+
+aws ec2 create-network-interface
+--subnet-id subnet-aed11acb
+--groups sg-ad70b8c8
+--private-ip-addresses PrivateIpAddress=10.0.0.26,Primary=true PrivateIpAddress=10.0.0.27,Primary=false

@@ -1,0 +1,44 @@
+{
+    "DryRun": true, 
+    "InstanceId": "", 
+    "Name": "", 
+    "Description": "", 
+    "NoReboot": true, 
+    "BlockDeviceMappings": [
+        {
+            "VirtualName": "", 
+            "DeviceName": "", 
+            "Ebs": {
+                "SnapshotId": "", 
+                "VolumeSize": 0, 
+                "DeleteOnTermination": true, 
+                "VolumeType": "", 
+                "Iops": 0, 
+                "Encrypted": true
+            }, 
+            "NoDevice": ""
+        }
+    ]
+}
+
+
+Creating an AMI from EC2 instance
+By running the following command, you can create the image from EC2 instance. 
+You have to provide the instance ID, image name, and image description.
+
+$ aws ec2 create-image
+--instance-id [InstanceId]
+--name [Name]
+--description [Description]
+
+The parameters used in this command are described as follows:
+[InstanceId] : This option provides the EC2 instance ID
+[Name] : This option gives the name of the image
+[Description] : This one provides the image description
+The following command creates an image of the EC2 instance with ID i-2e7dace3:
+
+$ aws ec2 create-image
+--instance-id i-2e7dace3
+--name "WebServerImage"
+--description "Image of web server"
+

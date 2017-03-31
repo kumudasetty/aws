@@ -1,0 +1,39 @@
+aws ec2 describe-regions
+aws ec2 describe-images 
+aws ec2 run-instances
+aws ec2 allocate-address  
+aws ec2 associate-address
+aws ec2 create-security-group
+aws ec2 create-network-interface
+
+aws ec2 attach-network-interface
+aws ec2 associate-address
+aws ec2 describe-availability-zones
+aws ec2 create-volume
+aws ec2 attach-volume
+aws ec2 create-tags
+aws ec2 create-security-group
+aws ec2 authorize-security-group-ingress
+aws ec2 authorize-security-group-egress
+aws ec2 modify-instance-attribute
+aws ec2 create-key-pair
+aws ec2 create-placement-group
+aws ec2 run-instances
+aws elb create-load-balancer
+aws elb configure-health-check
+aws elb register-instances-with-load-balancer
+
+
+
+aws ec2 create-image
+aws ec2 modify-image-attribute
+
+
+aws ec2 create-vpc
+aws ec2 create-tags
+aws ec2 describe-vpcs
+aws ec2 create-subnet
+aws ec2 create-security-group
+aws ec2 authorize-security-group-ingress
+aws ec2 authorize-security-group-egress
+aws ec2 describe-images

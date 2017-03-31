@@ -1,0 +1,49 @@
+{
+    "DryRun": true, 
+    "GroupName": "", 
+    "Description": "", 
+    "VpcId": ""
+}
+
+
+Creating a security group for EC2-VPC
+By running the following command, you can create a security group in EC2-VPC. 
+You have to provide the security group name, security group description, and VPC ID for the security group:
+
+$ aws ec2 create-security-group
+--group-name [SecurityGroupName]
+--description [Description]
+--vpc-id [VPCId]
+
+The parameters used in this command are described as follows:
+[SecurityGroupName] : This parameter provides the security group name
+[Description] : This one gives the description of the security group
+[VPCId] : This option provides a VPC ID
+
+$ aws ec2 create-security-group
+--group-name WebServerSecurityGroup
+--description "Web Server Security Group"
+--vpc-id vpc-1f33c27a
+
+Adding an inbound rule
+Run the following command to add an inbound rule to your security group. 
+You will need to provide the security group ID, protocol (TCP/UDP/ICMP), port, and the CIDR IP range.
+
+$ aws ec2 authorize-security-group-ingress
+--group-id [SecurityGroupId]
+--protocol [Protocol]
+--port [Port]
+--cidr [CIDR]
+
+The parameters used in this command are described as follows:
+[SecurityGroupId] : This is used to provide the security group ID
+[Protocol] : This one provides the IP protocol of this permission
+[Port] : This is used to specify the range of ports to allow
+[CIDR] : This one gives the CIDR IP range
+Next, run the following command to create the inbound rule that allows SSH traffi from IP address 123.252.223.114 in the security group (sg-c6b873a3):
+
+$ aws ec2 authorize-security-group-ingress
+--group-id sg-c6b873a3
+--protocol tcp
+--port 22
+--cidr 123.252.223.114/32

@@ -1,0 +1,36 @@
+{
+    "DryRun": true, 
+    "NetworkInterfaceId": "", 
+    "InstanceId": "", 
+    "DeviceIndex": 0
+}
+
+Attaching the network interface to an instance
+By running the following command, we can attach the ENI to an EC2 instance. You will need to provide the ENI ID, EC2 instance ID, and the device index.
+$ aws ec2 attach-network-interface
+--network-interface-id [NetworkInterfaceId]
+--instance-id [InstanceId]
+--device-index [DeviceIndex]
+
+$ aws ec2 attach-network-interface
+--network-interface-id eni-5c88f739
+--instance-id i-2e7dace3
+--device-index 1
+
+Associating the EIP to the ENI
+By running the following command, we can associate the EIP to the ENI. You have to provide the ENI ID, EIP allocation ID, and the private address.
+$ aws ec2 associate-address
+--network-interface-id [NetworkInterfaceId]
+--allocation-id [AllocationId]
+--private-ip-address [PrivateIpAddress]
+
+The parameters used in this command are described as follows:
+[NetworkInterfaceId] : This parameter provides the network interface ID to attach to an EC2 instance
+[AllocationId] : This gives the allocation ID of EIP, which is required for EC2-VPC
+[PrivateIpAddress] : If no private IP address is specifid, the Elastic IP address is associated with the primary private IP address
+Next, run the following command to associate the EIP to 10.0.0.26 (the private IP address of the ENI):
+
+$ aws ec2 associate-address
+--network-interface-id eni-5c88f739
+--allocation-id eipalloc-d59f80b7
+--private-ip-address 10.0.0.26

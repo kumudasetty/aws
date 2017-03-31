@@ -1,0 +1,20 @@
+{
+    "DryRun": true, 
+    "ImageIds": [
+        ""
+    ], 
+    "Owners": [
+        ""
+    ], 
+    "ExecutableUsers": [
+        ""
+    ], 
+    "Filters": [
+        {
+            "Name": "", 
+            "Values": [
+                ""
+            ]
+        }
+    ]
+}
