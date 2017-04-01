@@ -1,0 +1,33 @@
+-h --help               show this help
+
+    --kernel-id             display the kernel id
+    --ramdisk-id            display the ramdisk id
+    --reservation-id        display the reservation id
+
+    --ami-id                display the ami id
+    --ami-launch-index      display the ami launch index
+    --ami-manifest-path     display the ami manifest path
+    --ancestor-ami-ids      display the ami ancestor id
+    --product-codes         display the ami associated product codes
+    --availability-zone     display the ami placement zone
+
+    --instance-id           display the instance id
+    --instance-type         display the instance type
+
+    --local-hostname        display the local hostname
+    --public-hostname       display the public hostname
+
+    --local-ipv4            display the local ipv4 ip address
+    --public-ipv4           display the public ipv4 ip address
+
+    --block-device-mapping  display the block device id
+    --security-groups       display the security groups
+
+    --mac                   display the instance mac address
+    --profile               display the instance profile
+    --instance-action       display the instance-action
+
+    --public-keys           display the openssh public keys
+    --user-data             display the user data (not actually metadata)
+
+    -u | --url URL          use URL (default: http://169.254.169.254/2009-04-04)
