@@ -4,8 +4,20 @@
     "AssumeRolePolicyDocument": ""
 }
 
+Create an IAM role for EC2.
+Execute the following commands to create a role for an AWS service. 
+You will need to specify who can assume this role in the JSON document.
+1. Create a new JSON document with the following content and save as S3RoleForEC2.json:
+{
+"Version": "2012-10-17",
+ "Statement": {
+ "Effect": "Allow",
+ "Principal": {"Service": "ec2.amazonaws.com"},
+ "Action": "sts:AssumeRole"
+ }
+}
 
 $ aws iam create-role
 --role-name S3RoleForEC2
 --assume-role-policy-document
-file://F:\\S3RoleForEC2.json
+file://S3RoleForEC2.json

@@ -6,7 +6,8 @@
 }
 
 Attaching the volume
-Run the following command to attach an EBS volumes to an EC2 instance. You will need to provide the EC2 instance ID, EBS volume ID, and the device name.
+Run the following command to attach an EBS volumes to an EC2 instance. 
+You will need to provide the EC2 instance ID, EBS volume ID, and the device name.
 $ aws ec2 attach-volume
 --volume-id [VolumeId]
 --instance-id [InstanceId]

@@ -8,7 +8,6 @@
     "AllowReassociation": true
 }
 
-
 to create the Elastic IP in VPC
 $ aws ec2 allocate-address --domain vpc
 
@@ -29,7 +28,9 @@ You need to provide the network interface ID of the ENI and allocation ID of the
 If you don't specify the private IP address, then the Elastic IP address is associated with the primary IP address.
 
 Associating the EIP to the ENI
-By running the following command, we can associate the EIP to the ENI. You have to provide the ENI ID, EIP allocation ID, and the private address.
+By running the following command, we can associate the EIP to the ENI. 
+You have to provide the ENI ID, EIP allocation ID, and the private address.
+
 $ aws ec2 associate-address
 --network-interface-id [NetworkInterfaceId]
 --allocation-id [AllocationId]

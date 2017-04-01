@@ -4,7 +4,15 @@
     "PasswordResetRequired": true
 }
 
+Create an IAM user.
+Execute the following command to create a user: rtuniki
+
+$ aws iam create-user
+--user-name rtuniki
+
+2. Set the password for IAM user.
+Execute the following command to set a new password for the user:
 
 $ aws iam create-login-profile
 --user-name rtuniki
---password awscloud123
+--password myaws123

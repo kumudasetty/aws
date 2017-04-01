@@ -18,3 +18,18 @@
         }
     ]
 }
+
+Before we launch the EC2 instances, we need the image ID.
+Run the following command to get the list of images. 
+We can apply the fiter to identify a specific image. Record the image ID for later use:
+
+$ aws ec2 describe-images
+--filter [Filter]
+
+By executing the following command, you obtain the image ID of a 64-bit version of Ubuntu 12.04 image:
+$ aws ec2 describe-images
+--filter
+"Name=virtualization-type,Values=paravirtual"
+"Name=root-device-type,Values=ebs" "Name=architecture,Values=x86_64"
+"Name=name,Values=ubuntu/images/ebs/ubuntu-precise-12.04-amd64-
+server-20130204"

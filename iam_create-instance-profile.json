@@ -3,6 +3,11 @@
     "Path": ""
 }
 
+Create and assign an instance profie to the role.
+Execute the following commands to fist create an instance profie, and then add the role to the instance profie.
+
+1. Create an instance profile
+Execute the following command to create an instance profile: S3RoleForEC2Profile
 
 $ aws iam create-instance-profile
 --instance-profile-name S3RoleForEC2Profile

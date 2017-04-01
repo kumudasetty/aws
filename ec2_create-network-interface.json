@@ -21,9 +21,9 @@
     "DryRun": true
 }
 
-
 Creating a network interface
-Run the following command to create the ENI. You will need to provide the subnet ID, security group IDs, and one or more private IP addresses.
+Run the following command to create the ENI. 
+You will need to provide the subnet ID, security group IDs, and one or more private IP addresses.
 $ aws ec2 create-network-interface
 --subnet-id [SubnetId]
 --groups [SecurityGroupIds]

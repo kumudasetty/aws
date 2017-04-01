@@ -1,6 +1,6 @@
 https://aws.amazon.com
 <br>
-Compute
+<b>Compute</b><br>
 Amazon EC2
 Amazon EC2 Container Registry
 Amazon EC2 Container Service
@@ -12,7 +12,7 @@ AWS Lambda
 Auto Scaling
 Elastic Load Balancing
 <br>
-Storage
+<b>Storage</b><br>
 Amazon S3
 Amazon EBS
 Amazon EFS
@@ -20,27 +20,27 @@ Amazon Glacier
 AWS Snowball
 AWS Storage Gateway
 <br>
-Database
+<b>Database</b><br>
 Amazon RDS
 Amazon DynamoDB
 Amazon ElastiCache
 Amazon Redshift
 <br>
-Networking & Content Delivery
+<b>Networking & Content Delivery</b><br>
 Amazon VPC
 Amazon CloudFront
 AWS Direct Connect
 Elastic Load Balancing
 Amazon Route 53
 <br>
-Migration
+<b>Migration</b><br>
 AWS Database Migration Service
 AWS Server Migration Service
 AWS Schema Conversion Tool
 AWS Import/Export
 AWS Application Discovery Service
 <br>
-Developer Tools
+<b>Developer Tools</b><br>
 AWS CodeCommit
 AWS CodeBuild
 AWS CodeDeploy
@@ -48,7 +48,7 @@ AWS CodePipeline
 AWS X-Ray
 AWS Tools & SDKs
 <br>
-Management Tools
+<b>Management Tools</b><br>
 Amazon CloudWatch
 AWS CloudFormation
 AWS CloudTrail
@@ -56,7 +56,7 @@ AWS Config
 AWS OpsWorks
 AWS Service Catalog
 <br>
-Trusted Advisor
+<b>Trusted Advisor</b><br>
 AWS Health
 AWS Management Console
 AWS Command Line Interface
@@ -65,7 +65,7 @@ Security, Identity, & Compliance
 Identity & Access Management
 Amazon Inspector
 <br>
-AWS Artifact
+<b>AWS Artifact</b><br>
 AWS Certificate Manager
 AWS Cloud HSM
 AWS Directory Service
@@ -74,7 +74,7 @@ AWS Organizations
 AWS Shield
 AWS WAF
 <br>
-Analytics
+<b>Analytics</b><br>
 Amazon Athena
 Amazon EMR
 Amazon CloudSearch
@@ -89,7 +89,7 @@ Amazon Polly
 Amazon Rekognition
 Amazon Machine Learning
 <br>
-Internet of Things
+<b>Internet of Things</b><br>
 AWS IoT
 Contact Center
 Amazon Connect
@@ -98,7 +98,7 @@ Game Development
 Amazon Lumberyard (beta)
 Amazon GameLift
 <br>
-Mobile Services
+<b>Mobile Services</b><br>
 AWS Mobile Hub
 Amazon API Gateway
 Amazon Cognito
@@ -111,7 +111,7 @@ AWS Mobile SDK for Unity
 AWS Mobile SDK for Xamarin
 Amazon SNS
 <br>
-Application Services
+<b>Application Services</b><br>
 Amazon API Gateway
 Amazon Elastic Transcoder
 Amazon SWF
@@ -121,7 +121,7 @@ Amazon SNS
 Amazon SES
 Amazon SQS
 <br>
-Business Productivity
+<b>Business Productivity</b><br>
 Amazon WorkDocs
 Amazon WorkMail
 Amazon Chime
@@ -130,7 +130,7 @@ Amazon WorkSpaces
 Amazon WAM
 Amazon AppStream 2.0
 <br>
-SDKs & Toolkits
+<b>SDKs & Toolkits</b><br>
 AWS SDK for C++
 AWS SDK for Go
 AWS SDK for Java
@@ -150,7 +150,7 @@ Alexa Web Information Service
 Amazon Silk
 AWS GovCloud (US)
 <br>
-General Reference
+<b>General Reference</b><br>
 Regions and Endpoints
 Security Credentials
 ARNs & Service Namespaces

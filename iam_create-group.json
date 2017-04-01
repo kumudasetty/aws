@@ -3,6 +3,8 @@
     "GroupName": ""
 }
 
+Create IAM group.
+Execute the following command to create a group: developers
 
 $ aws iam create-group
 --group-name developers

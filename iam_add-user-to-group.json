@@ -3,6 +3,15 @@
     "UserName": ""
 }
 
+Create an IAM user.
+Execute the following command to create a user: rtuniki
+
+$ aws iam create-user
+--user-name rtuniki
+
+Execute the following command to add the previously created user: rtuniki
+to the group: developers
+
 $ aws iam add-user-to-group
 --user-name rtuniki
 --group-name developers

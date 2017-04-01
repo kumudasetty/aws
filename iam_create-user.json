@@ -3,8 +3,8 @@
     "UserName": ""
 }
 
+Create an IAM user.
+Execute the following command to create a user: rtuniki
 
 $ aws iam create-user
 --user-name rtuniki
-
-

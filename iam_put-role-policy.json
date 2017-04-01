@@ -4,9 +4,68 @@
     "PolicyDocument": ""
 }
 
+Creating IAM roles
+An IAM role is a container for a policy. Using IAM roles for EC2 instances allows for easy
+management of access keys and for their automatic rotation, that is, Amazon rotates the
+keys several times a day without requiring any specifi action from your end. 
+Hence, you should not have the access keys as a part of the AMI or your application, as their rotation
+becomes unnecessarily complicated. We just need to create an IAM role, assign permissions
+to the role, and then launch the EC2 instances to make this work.
+
+Create an IAM role for EC2
+1. Create a new JSON document with the following content and save as
+S3RoleForEC2.json:
+{
+"Version": "2012-10-17",
+ "Statement": {
+ "Effect": "Allow",
+ "Principal": {"Service": "ec2.amazonaws.com"},
+ "Action": "sts:AssumeRole"
+ }
+}
+
+2. Execute the following command to create the S3RoleForEC2 role using the
+JSON document:
+$ aws iam create-role
+--role-name S3RoleForEC2
+--assume-role-policy-document
+file://F:\\S3RoleForEC2.json
+
+2. Create an inline policy for the role.
+After creating a role, you need to assign permissions to it. For example, in our sample
+policy, we are allowing access to an S3 bucket named appconfiguration from the
+EC2 instance.
+1. Create the JSON document with the following content. We are giving the
+appropriate permissions to list objects in the bucket, and to put, get, and
+delete objects from the bucket. Save the file as S3RoleForEC2Policy.
+json.
+ {
+ "Version": "2012-10-17",
+ "Statement": [
+ {
+ "Effect": "Allow",
+ "Action": [
+ "s3:ListBucket"
+ ],
+ "Resource": "arn:aws:s3:::appconfiguration"
+ },
+ {
+ "Effect": "Allow",
+ "Action": [
+ "s3:PutObject",
+ "s3:GetObject",
+ "s3:DeleteObject"
+ ],
+ "Resource":
+ "arn:aws:s3:::appconfiguration/*"
+ }
+ ]
+ }
+
+2. Execute the following command to assign the new inline policy to the S3RoleForEC2 role.
 
 aws iam put-role-policy
 --role-name S3RoleForEC2
 --policy-name S3RoleForEC2Policy
 --policy-document
-file://F:\\S3RoleForEC2Policy.json
+file://S3RoleForEC2Policy.json

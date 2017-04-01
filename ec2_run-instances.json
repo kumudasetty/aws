@@ -85,7 +85,6 @@
     "EbsOptimized": true
 }
 
-
 Launching the EC2 instance in VPC
 $ aws ec2 run-instances
 --image-id [ImageId]

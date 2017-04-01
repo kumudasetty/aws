@@ -5,7 +5,6 @@
     "VpcId": ""
 }
 
-
 Creating a security group for EC2-VPC
 By running the following command, you can create a security group in EC2-VPC. 
 You have to provide the security group name, security group description, and VPC ID for the security group:

@@ -6,10 +6,9 @@
 
 
 $ aws iam put-user-policy
---user-name ethanhunt
+--user-name rtuniki
 --policy-name S3ReadAccess
 --policy-document file://S3ReadAccess.json
-
 
 {
 	"Version": "2012-10-17",

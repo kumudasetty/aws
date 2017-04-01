@@ -13,12 +13,12 @@ But if you stop the instance in EC2-VPC, the EIP remains associated with the EC2
 $ aws ec2 allocate-address
 --domain [Domain]
 
+The parameters used in this command are described here:
+[Domain] : Domain value indicates whether the EIP address is used with instances in EC2-Classic (standard) or instances in a EC2-VPC (VPC).
 You have to specify whether domain is standard or VPC. Record the allocation ID for further use.
-Domain value indicates whether the EIP address is used with instances in EC2-Classic (standard) or instances in a EC2-VPC (VPC).
 
 create the Elastic IP in VPC
 $ aws ec2 allocate-address --domain vpc
-
 
 to associate the Elastic IP to the Elastic Network Interface (ENI):
 $ aws ec2 associate-address

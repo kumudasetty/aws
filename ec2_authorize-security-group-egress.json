@@ -41,7 +41,6 @@
     ]
 }
 
-
 Adding an outbound rule
 Run the following command to add an outbound rule to your security group. 
 You will need to specify the security group ID, protocol (TCP/UDP/ICMP), port, and the CIDR IP range.
@@ -51,6 +50,7 @@ $ aws ec2 authorize-security-group-egress
 --protocol [Protocol]
 --port [Port]
 --cidr [CIDR]
+
 The parameters used in this command are described as follows:
 [SecurityGroupId] : This parameter provides the security group ID
 [Protocol] : This option specifis the IP protocol of this permission

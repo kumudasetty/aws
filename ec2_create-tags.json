@@ -11,13 +11,16 @@
     ]
 }
 
-
 Creating tags for consistency
-Tags represent metadata for your AWS resources. Tags are used to separate your AWS resources from one another. 
+Tags represent metadata for your AWS resources. 
+Tags are used to separate your AWS resources from one another. 
 These are key/value pairs. If we use good tags, then it's easy to fiter resources by tag names. 
-It is also helpful for analyzing your bill; we can get the billing information of all tags by fitering on tags associated with the AWS resources. 
+It is also helpful for analyzing your bill; 
+we can get the billing information of all tags by fitering on tags associated with the AWS resources. 
+
 For example,
-you can tag several resources with a specifi application name, and then organize your billing information to see the total cost for that application across several AWS services. 
+you can tag several resources with a specifi application name, 
+and then organize your billing information to see the total cost for that application across several AWS services. 
 If we add a tag that has the same key as an existing tag, then the new value will override the old value.
 You can edit tag keys and values at any time, and you can also remove them at any time.
 
@@ -26,6 +29,7 @@ By running the following command, you can create or update one or more tags for 
 $ aws ec2 create-tags
 --resources [Resources]
 --tags [Tags]
+
 The parameters used in this command are described as follows:
 [Resources] : This parameter is used to provide the IDs of one or more resources to tag
 [Tags] : This parameter provides a list of tags

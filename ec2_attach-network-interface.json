@@ -12,12 +12,17 @@ $ aws ec2 attach-network-interface
 --instance-id [InstanceId]
 --device-index [DeviceIndex]
 
+The parameters used in this command are described as follows:
+[NetworkInterfaceId] : This parameter provides the network interface ID to attach to an EC2 instance
+[InstanceId] : This one provides an EC2 instance ID
+[DeviceIndex] : This parameter provides the index of the device for the network interface attachment
+
 $ aws ec2 attach-network-interface
 --network-interface-id eni-5c88f739
 --instance-id i-2e7dace3
 --device-index 1
 
-Associating the EIP to the ENI
+Associating the Elastic IP to the ENI
 By running the following command, we can associate the EIP to the ENI. You have to provide the ENI ID, EIP allocation ID, and the private address.
 $ aws ec2 associate-address
 --network-interface-id [NetworkInterfaceId]

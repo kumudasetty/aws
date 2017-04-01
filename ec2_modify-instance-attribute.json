@@ -57,10 +57,10 @@ You have to provide the EC2 instance ID, and one or more security group IDs:
 $ aws ec2 modify-instance-attribute
 --instance-id [InstanceId]
 --groups [SecurityGroupIds]
+
 The parameters used in this command are described here:
 [InstanceId] : This option gives an EC2 instance ID
 [SecurityGroupIds] : This option provides the IDs of one or more security groups
-
 
 $ aws ec2 modify-instance-attribute
 --instance-id i-2e7dace3

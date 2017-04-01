@@ -42,7 +42,6 @@
     ]
 }
 
-
 Creating a security group for EC2-VPC
 By running the following command, you can create a security group in EC2-VPC. 
 You have to provide the security group name, security group description, and VPC ID for the security group:
@@ -52,7 +51,15 @@ $ aws ec2 create-security-group
 --description [Description]
 --vpc-id [VPCId]
 
+The parameters used in this command are described as follows:
+[SecurityGroupName] : This parameter provides the security group name
+[Description] : This one gives the description of the security group
+[VPCId] : This option provides a VPC ID
 
+$ aws ec2 create-security-group
+--group-name WebServerSecurityGroup
+--description "Web Server Security Group"
+--vpc-id vpc-1f33c27a
 
 Adding an inbound rule
 Run the following command to add an inbound rule to your security group. 
@@ -75,4 +82,3 @@ $ aws ec2 authorize-security-group-ingress
 --protocol tcp
 --port 22
 --cidr 123.252.223.114/32
-

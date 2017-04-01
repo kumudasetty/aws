@@ -4,6 +4,9 @@
     "PolicyDocument": ""
 }
 
+Follow these steps to create an inline IAM policy. 
+After creating the policy, you can attach it to the developers group
+
 {
 	"Version": "2012-10-17",
 	"Statement": [
@@ -25,3 +28,12 @@
 		}
 	]
 }
+
+2. Get the list of users in the group using the following command.
+$ aws iam get-group --group-name developers
+
+3. Execute the following command to assign the inline policy to the developers group:
+$ aws iam put-group-policy
+--group-name developers
+--policy-name EC2DevGroupPolicy
+--policy-document file://EC2DevGroupPolicy.json

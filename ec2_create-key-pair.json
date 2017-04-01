@@ -12,8 +12,7 @@ You have to provide the key pair name. You can explicitly specify the text outpu
 $ aws ec2 create-key-pair
 --key-name [KeyPairName]
 The [KeyPairName]  parameter in this command is used to specify a name for the key pair.
-2. After executing the create-key-pair command, copy the entire output key into fie
-including the following lines:
+2. After executing the create-key-pair command, copy the entire output key into file including the following lines:
 ----BEGIN RSA PRIVATE KEY----
 -----END RSA PRIVATE KEY-----
 3. Save the fie with ASCII encoding.
