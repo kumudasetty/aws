@@ -41,3 +41,232 @@ aws ec2 describe-key-pairs
 aws ec2 create-key-pair --key-name dev-servers
 
 aws ec2 delete-key-pair --key-name dev-servers
+
+
+
+***
+AMIs
+• ec2-copy-image (p. 103)
+• ec2-create-image (p. 122)
+• ec2-deregister (p. 274)
+• ec2-describe-image-attribute (p. 319)
+• ec2-describe-images (p. 323)
+• ec2-migrate-image (p. 562)
+• ec2-modify-image-attribute (p. 566)
+• ec2-register (p. 610)
+• ec2-reset-image-attribute (p. 655)
+
+Bundle Tasks
+• ec2-bundle-instance (p. 78)
+• ec2-cancel-bundle-task (p. 83)
+• ec2-describe-bundle-tasks (p. 290)
+
+ClassicLink
+• ec2-attach-classic-link-vpc (p. 55)
+• ec2-describe-classic-link-instances (p. 294)
+• ec2-describe-vpc-classic-link (p. 469)
+• ec2-detach-classic-link-vpc (p. 500)
+• ec2-disable-vpc-classic-link (p. 519)
+• ec2-enable-vpc-classic-link (p. 534)
+
+Customer Gateways (Amazon VPC)
+• ec2-create-customer-gateway (p. 110)
+• ec2-delete-customer-gateway (p. 205)
+• ec2-describe-customer-gateways (p. 302)
+
+DHCP Options (Amazon VPC)
+• ec2-associate-dhcp-options (p. 49)
+• ec2-create-dhcp-options (p. 114)
+• ec2-delete-dhcp-options (p. 208)
+• ec2-describe-dhcp-options (p. 306)
+
+Elastic Block Store
+• ec2-attach-volume (p. 65)
+• ec2-copy-snapshot (p. 106)
+• ec2-create-snapshot (p. 164)
+• ec2-create-volume (p. 178)
+• ec2-delete-disk-image (p. 211 )
+• ec2-delete-snapshot (p. 242)
+• ec2-delete-volume (p. 254)
+• ec2-describe-snapshot-attribute (p. 417)
+• ec2-describe-snapshots (p. 420)
+• ec2-describe-volume-attribute (p. 451 )
+• ec2-describe-volumes (p. 460)
+• ec2-describe-volume-status (p. 454)
+• ec2-detach-volume (p. 509)
+• ec2-enable-volume-io (p. 531 )
+• ec2-modify-snapshot-attribute (p. 585)
+• ec2-modify-volume-attribute (p. 591 )
+• ec2-reset-snapshot-attribute (p. 664)
+
+Elastic IP Addresses
+• ec2-allocate-address (p. 37)
+• ec2-associate-address (p. 44)
+• ec2-describe-addresses (p. 280)
+• ec2-disassociate-address (p. 522)
+• ec2-release-address (p. 621 )
+
+Elastic Network Interfaces (Amazon VPC)
+• ec2-assign-private-ip-addresses (p. 41 )
+• ec2-attach-network-interface (p. 62)
+• ec2-create-network-interface (p. 146)
+• ec2-delete-network-interface (p. 230)
+• ec2-describe-network-interfaces (p. 372)
+• ec2-describe-network-interface-attribute (p. 368)
+• ec2-detach-network-interface (p. 506)
+• ec2-modify-network-interface-attribute (p. 576)
+• ec2-reset-network-interface-attribute (p. 661 )
+• ec2-unassign-private-ip-addresses (p. 702)
+
+Instances
+• ec2-describe-instance-attribute (p. 331 )
+• ec2-describe-instance-status (p. 336)
+• ec2-describe-instances (p. 343)
+• ec2-get-console-output (p. 539)
+• ec2-get-password (p. 543)
+• ec2-modify-instance-attribute (p. 571 )
+• ec2-reboot-instances (p. 607)
+• ec2-reset-instance-attribute (p. 658)
+• ec2-run-instances (p. 676)
+• ec2-start-instances (p. 692)
+• ec2-stop-instances (p. 695)
+• ec2-terminate-instances (p. 699)
+
+Internet Gateways (Amazon VPC)
+• ec2-attach-internet-gateway (p. 59)
+• ec2-create-internet-gateway (p. 132)
+• ec2-delete-internet-gateway (p. 218)
+• ec2-describe-internet-gateways (p. 355)
+• ec2-detach-internet-gateway (p. 503)
+
+Key Pairs
+• ec2-create-keypair (p. 134)
+• ec2-delete-keypair (p. 221 )
+• ec2-describe-keypairs (p. 359)
+• ec2-fingerprint-key (p. 537)
+• ec2-import-keypair (p. 553)
+
+Monitoring
+• ec2-monitor-instances (p. 601 )
+• ec2-unmonitor-instances (p. 705)
+
+Network ACLs (Amazon VPC)
+• ec2-create-network-acl (p. 138)
+• ec2-create-network-acl-entry (p. 141 )
+• ec2-delete-network-acl (p. 224)
+• ec2-delete-network-acl-entry (p. 226)
+• ec2-describe-network-acls (p. 363)
+• ec2-replace-network-acl-association (p. 625)
+• ec2-replace-network-acl-entry (p. 628)
+
+Placement Groups
+• ec2-create-placement-group (p. 150)
+• ec2-delete-placement-group (p. 233)
+• ec2-describe-placement-groups (p. 379)
+
+Regions and Availability Zones
+• ec2-describe-availability-zones (p. 286)
+• ec2-describe-regions (p. 386)
+
+Reserved Instances
+• ec2-cancel-reserved-instances-listing (p. 92)
+• ec2-create-reserved-instances-listing (p. 153)
+• ec2-describe-reserved-instances (p. 390)
+• ec2-describe-reserved-instances-listings (p. 395)
+• ec2-describe-reserved-instances-modifications (p. 400)
+• ec2-describe-reserved-instances-offerings (p. 405)
+• ec2-modify-reserved-instances (p. 581 )
+• ec2-purchase-reserved-instances-offering (p. 604)
+
+Route Tables (Amazon VPC)
+• ec2-associate-route-table (p. 52)
+• ec2-create-route (p. 157)
+• ec2-create-route-table (p. 161 )
+• ec2-delete-route (p. 235)
+• ec2-delete-route-table (p. 239)
+• ec2-describe-route-tables (p. 412)
+• ec2-disable-vgw-route-propagation (p. 516)
+• ec2-disassociate-route-table (p. 525)
+• ec2-enable-vgw-route-propagation (p. 528)
+• ec2-replace-route (p. 632)
+• ec2-replace-route-table-association (p. 635)
+
+Security Groups
+• ec2-authorize (p. 72)
+• ec2-create-group (p. 118)
+• ec2-delete-group (p. 215)
+• ec2-describe-group (p. 313)
+• ec2-revoke (p. 671 )
+
+Spot Instances
+• ec2-cancel-spot-instance-requests (p. 96)
+• ec2-create-spot-datafeed-subscription (p. 168)
+• ec2-delete-spot-datafeed-subscription (p. 245)
+• ec2-describe-spot-datafeed-subscription (p. 426)
+• ec2-describe-spot-instance-requests (p. 429)
+• ec2-describe-spot-price-history (p. 437)
+• ec2-request-spot-instances (p. 643)
+
+Subnets (Amazon VPC)
+• ec2-create-subnet (p. 171 )
+• ec2-delete-subnet (p. 247)
+• ec2-describe-subnets (p. 442)
+• ec2-modify-subnet-attribute (p. 588)
+
+Tags
+• ec2-create-tags (p. 175)
+• ec2-delete-tags (p. 250)
+• ec2-describe-tags (p. 446)
+
+VM Import
+• ec2-cancel-conversion-task (p. 86)
+• ec2-delete-disk-image (p. 211 )
+• ec2-describe-conversion-tasks (p. 298)
+• ec2-import-instance (p. 546)
+• ec2-import-volume (p. 556)
+• ec2-resume-import (p. 667)
+
+VM Export
+• ec2-cancel-export-task (p. 89)
+• ec2-create-instance-export-task (p. 128)
+• ec2-describe-export-tasks (p. 310)
+
+VPCs (Amazon VPC)
+• ec2-create-vpc (p. 184)
+• ec2-delete-vpc (p. 257)
+• ec2-describe-vpc-attribute (p. 466)
+• ec2-describe-vpcs (p. 485)
+• ec2-modify-vpc-attribute (p. 594)
+
+VPC Endpoints (Amazon VPC)
+• ec2-create-vpc-endpoint (p. 187)
+• ec2-delete-vpc-endpoints (p. 260)
+• ec2-describe-prefix-lists (p. 383)
+• ec2-describe-vpc-endpoints (p. 473)
+• ec2-describe-vpc-endpoint-services (p. 477)
+• ec2-modify-vpc-endpoint (p. 598)
+
+VPC Peering Connections (Amazon VPC)
+• ec2-accept-vpc-peering-connection (p. 34)
+• ec2-create-vpc-peering-connection (p. 191 )
+• ec2-delete-vpc-peering-connection (p. 262)
+• ec2-describe-vpc-peering-connections (p. 480)
+• ec2-reject-vpc-peering-connection (p. 618)
+
+VPN Connections (Amazon VPC)
+• ec2-create-vpn-connection (p. 195)
+• ec2-create-vpn-connection-route (p. 199)
+• ec2-delete-vpn-connection (p. 265)
+• ec2-delete-vpn-connection-route (p. 268)
+• ec2-describe-vpn-connections (p. 490)
+
+Virtual Private Gateways (Amazon VPC)
+• ec2-attach-vpn-gateway (p. 69)
+• ec2-create-vpn-gateway (p. 202)
+• ec2-delete-vpn-gateway (p. 271 )
+• ec2-describe-vpn-gateways (p. 495)
+• ec2-detach-vpn-gateway (p. 513)
+
+
+
+
